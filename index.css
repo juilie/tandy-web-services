@@ -1,0 +1,194 @@
+main {
+    width: 750px;
+    height: 700px;
+    margin: 0 auto;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, Helvetica;
+}
+
+.carousel {
+    display: flex;
+    height: 200px;
+}
+
+.carousel-main {
+    display: block;
+    background-color: #a8bdc8;
+    max-width: 540px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    padding-right: 5px;
+
+}
+
+.carousel-subtext {
+    background-color: #C6BB7B;
+    width: 100%;
+    height: 38px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-panel {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(83, 79, 68);
+}
+
+.panel-item {
+    background-color: rgb(120, 114, 100);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+}
+
+
+.panel-item a:link,
+.panel-item a:visited,
+.panel-item a:hover,
+.panel-item a:active {
+    color: white;
+    margin-right: 5px;
+    margin-left: -8px;
+}
+
+.panel-title h3 {
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    color: white;
+}
+
+.gold-bar {
+    height: 22px;
+    width: 100%;
+    border: none;
+    background-color: #C6BB7B;
+    margin: 0;
+    margin-bottom: 1px;
+}
+
+.accolades {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    gap: 1px;
+    margin-top: 1px;
+}
+
+.accolades-item {
+    margin: 0;
+    width: 100%;
+}
+
+.accolades-header {
+    background-color: rgb(77, 140, 140);
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.accolades-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.accolades-header h2 {
+    font-weight: normal;
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.accolades-body {
+    background-color: #a8bdc8;
+    height: 400px;
+    width: 100%;
+    color: rgb(72, 72, 72);
+    text-align: left;
+    overflow: hidden;
+}
+
+.accolades-body iframe {
+    margin: 0 auto;
+}
+
+.accolades-body p {
+    margin: 10px 5px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.logo {
+    filter: sepia(100%) blur(0.5px);
+    display: flex;
+    font-size: small;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.logo p {
+    margin: 5px;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    gap: 2px;
+}
+
+.tab {
+    background-color: rgb(113, 91, 91);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 1px;
+    padding: 5px;
+    color: white;
+    font-size: small;
+}
+
+.tab:hover {
+    margin-bottom: 0;
+    background-color: #C6BB7B;
+    padding-top: 8px;
+    margin-top: -3px;
+}
+
+main h5 {
+    text-align: center;
+    margin: 2px;
+    margin-bottom: 5px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.terms {
+    font-size: 10px;
+    color: #666666;
+    text-align: center;
+}
+
+.terms a:link,
+.terms a:visited,
+.terms a:hover,
+.terms a:active {
+    color: #666666;
+    font-weight: bold;
+}
