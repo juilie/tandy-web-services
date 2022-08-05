@@ -1,7 +1,7 @@
 .gallery {
-    --s: 150px; /* control the size */
-    --g: 10px;  /* control the gap */
-    --f: 1;     /* control the scale factor */
+    --s: 250px; /* control the size */
+    --g: 60px;  /* control the gap */
+    --f: 2;     /* control the scale factor */
     
     display: grid;
     gap: var(--g);
@@ -17,7 +17,16 @@
     min-width: 100%;
     cursor: pointer;
     background: purple;
-    transition: .35s linear;
+    transition: .35s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery > div > span {
+    font-size: 20pt;
+    color: white;
+    text-align: center;
   }
   
   .gallery div:hover{
@@ -25,6 +34,9 @@
     height: calc(var(--s)*var(--f));
   }
   
+  .gallery div:hover + div > span{
+    display: none;
+  }
   
   body {
     margin: 0;
