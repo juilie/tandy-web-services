@@ -1,0 +1,41 @@
+body {
+    background-color: aquamarine;
+}
+
+
+.square {
+    background-color: rebeccapurple;
+    width: 25vh;
+    height: 25vh;
+    transition: all .5s ease;
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.square:hover {
+    border: 2px solid red;
+}
+
+.square.expand {
+    width: 50vh;
+    height: 50vh;
+    transition: all .5s ease;
+}
+
+
+.square.small {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    transition: all .5s ease;
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

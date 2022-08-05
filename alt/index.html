@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function activate(e) {
+            e.classList.remove("initial");
+            const list = document.getElementsByClassName("initial");
+            for (var i = 0; i < list.length; i++) {
+                list[i].classList.add("small");
+            }
+            e.classList.add("expand");
+        }
+    </script>
+
+</head>
+
+<body>
+    <main>
+        <div class="flex-container">
+            <div class="square initial" onclick="activate(this)">
+                <h3>About</h3>
+            </div>
+            <div class="square initial" onclick="activate(this)">
+                <h3>Inquiries</h3>
+            </div>
+        </div>
+        <br>
+        <div class="flex-container">
+            <div class="square initial" onclick="activate(this)">
+                <h3>Resume</h3>
+            </div>
+            <div class="square initial" onclick="activate(this)">
+                <h3>Pricing</h3>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
